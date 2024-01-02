@@ -80,21 +80,21 @@ const createMarkup = (hits) => {
             />
           </a>
           <div class="info">
-            <div class="block-item">
-              <h2 class="tittle">Likes</h2>
-              <p class="count">${likes}</p>
+            <div class="info-item">
+              <h2>Likes</h2>
+              <p>${likes}</p>
             </div>
-            <div class="block-item">
-              <h2 class="tittle">Views</h2>
-              <p class="count">${views}</p>
+            <div class="info-item">
+              <h2>Views</h2>
+              <p>${views}</p>
             </div>
-            <div class="block-item">
-              <h2 class="tittle">Comments</h2>
-              <p class="count">${comments}</p>
+            <div class="info-item">
+              <h2>Comments</h2>
+              <p>${comments}</p>
             </div>
-            <div class="block-item">
-              <h2 class="tittle">Downloads</h2>
-              <p class="count">${downloads}</p>
+            <div class="info-item">
+              <h2>Downloads</h2>
+              <p>${downloads}</p>
             </div>
           </div>
         </li>`, "");

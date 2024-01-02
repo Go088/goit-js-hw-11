@@ -1,14 +1,54 @@
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: 200px;
+}
+
+h2, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .gallery {
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
     justify-content: center;
     align-items: flex-start;
     gap: 16px;
 }
+.gallery-item {
+    border: 1px solid #b2b6e0;
+    border-radius: 4px;
+    width: 360px;
+    height: 260px;
+}
+.gallery-item:hover,
+.gallery-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: scale(1.01);
+}
+
 .form {
     display: flex;
     flex-direction: row;
@@ -19,13 +59,48 @@
 .info {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
     align-items: center;
     justify-content: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 h2 {
     font-size: 16px;
 }
 
+.button {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: #4E75FF;
+    border: none;
+    width: 90px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+button:hover {
+    background: #6C8CFF;
+}
+
+input {
+    width: 272px;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+}
 
 .loader {
     width: 48px;
