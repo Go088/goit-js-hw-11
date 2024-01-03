@@ -41,15 +41,15 @@ form.addEventListener("submit", (event) => {
       loader.style.display = "none";
 
       if (!response.hits.length) {
-        iziToast.show({
-        message: "Sorry, there are no images matching your search query. Please try again!",
-        position: "topRight",
-        messageSize: "12",
-        backgroundColor: "#EF4040",
-        messageColor: "#FFF"
-        })
+        iziToast.error({
+          message: "Sorry, there are no images matching your search query. Please try again!",
+          position: "topRight",
+          messageSize: "11",
+          backgroundColor: "#EF4040",
+          messageColor: "#FFF"
+});
       }
-      gallery.innerHTML = ("afterbegin", createMarkup(response.hits));
+      gallery.innerHTML = createMarkup(response.hits);
       
       let galleryPage = new SimpleLightbox('.gallery a', {
         captions: true,
